@@ -309,6 +309,3 @@ nodes <- nodes %>%
 				subset(select = c('Noeud','Label','AU','PY','TI','SO','Z9','SC','WC', 'AB')) %>% 
 				rename(ID = "Noeud") %>% 
 				merge(List_of_nodes, by = "ID")
-
-write_xlsx(nodes,"C:/Users/ncami/OneDrive/Bureau//nodes_trust_games_th3.xlsx")
-write_xlsx(Edges,"C:/Users/ncami/OneDrive/Bureau//edges_trust_games_th3.xlsx")
